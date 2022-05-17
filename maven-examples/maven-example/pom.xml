@@ -7,7 +7,20 @@
     <version>3.7-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Simple Multi Modules Build</name>
-
+    
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>antix1-releases</name>
+        <url>http://192.168.172.144:8081/artifactory/libs-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>antix1-snapshots</name>
+        <url>http://192.168.172.144:8081/artifactory/libs-release</url>
+    </snapshotRepository>
+</distributionManagement>
+    
     <modules>
         <module>multi1</module>
         <module>multi2</module>
