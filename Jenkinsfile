@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Git Clone') {
         steps{
-          git url:'https://github.com/mihai23bogdan/project-examples/tree/master/maven-examples/maven-example', branch: 'master'
+          git url:'https://github.com/mihai23bogdan/project-examples.git', branch: 'master'
         }
     }    
       stage ('compile') {
